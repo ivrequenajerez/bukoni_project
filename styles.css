@@ -1,3 +1,40 @@
+/* general */
+
 body {
+    margin: 0px;
     font-family: 'Montserrat', sans-serif;
 }
+
+li {
+    list-style: none;
+    display: inline;
+    padding-left:2%;
+    padding-right:2%;
+
+}
+
+ul {
+    padding: 0px;
+    margin:0px;
+}
+
+/* fin general */
+
+/* header */
+
+.header-container {
+    
+}
+
+.header-elements {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.logo-bukoni {
+    width: 35%;
+}
+
+
+
+/* fin header */
