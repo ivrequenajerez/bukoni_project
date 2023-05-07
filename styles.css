@@ -53,7 +53,7 @@ ul {
 
 /* fin general */
 
-/* header */
+/* Header */
 
 .header-elements img,
 .header-elements .header-menu-button {
@@ -70,6 +70,11 @@ ul {
     transition: background-color 200ms linear;
 }
 
+.navbar-fixed-top.scrolled:hover {
+    background-color: white !important;
+    transition: background-color 200ms linear;
+}
+
 header.scrolled .header-container {
     position: fixed;
     top: 0;
@@ -79,7 +84,6 @@ header.scrolled .header-container {
     display: flex;
     align-items: center;
 }
-  
 
 .header-container {
     padding-top: 1%;
@@ -109,8 +113,8 @@ header.scrolled .header-container {
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
@@ -125,17 +129,24 @@ header.scrolled .header-container {
 
 .dropdown-content a {
     color: black;
-    padding: 12px 25px 18px 12px;
     text-decoration: none;
     display: block;
 }
 
+.dropdown-button-1 {
+    padding: 1em 1em 0.5em 1em; /* top, right, bottom, left */
+}
+
+.dropdown-button-2 {
+    padding: 0em 0em 1em 1em;
+}
+
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .dropdown-margin {
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 
 .header-menu-button {
@@ -147,17 +158,16 @@ header.scrolled .header-container {
     top: 0;
     width: 100%
 }
-  
 
-.sticky + .content {
+.sticky + .content-container {
     padding-top: 102px;
 }
 
-/* fin header */
+/* FIN Header */
 
 /* Body */
 
-/*.bukoni-banner {
+/*.bukoni-banner-container {
     
 }*/
 
@@ -172,6 +182,21 @@ header.scrolled .header-container {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+.icon:hover {
+    -webkit-animation-name: fa-bounce;
+    animation-name: fa-bounce;
+    -webkit-animation-delay: var(--fa-animation-delay,0s);
+    animation-delay: var(--fa-animation-delay,0s);
+    -webkit-animation-direction: var(--fa-animation-direction,normal);
+    animation-direction: var(--fa-animation-direction,normal);
+    -webkit-animation-duration: var(--fa-animation-duration,1s);
+    animation-duration: var(--fa-animation-duration,1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count,infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count,infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1));
+    animation-timing-function: var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1));
 }
   
 .hero-text .button {
@@ -190,25 +215,20 @@ header.scrolled .header-container {
     color: black;
 }
 
-    /* editando... */
+.button span:after {
+    content: '\00bb';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
 
-    .button span:after {
-        content: '\00bb';
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-    }
-    
-    .button:hover span:after {
-        opacity: 1;
-        right: 0;
-    }
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
-    .wrapper {
-        margin-top: -5px;
-    }
 
-    /* editando... */
+
 
 /* Fin body */

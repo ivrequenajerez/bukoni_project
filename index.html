@@ -9,26 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/96a8e79162.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="bukoniFav.ico">
     <title>Bukoni Clothes | Inicio</title>
 
     <!-- JS-JQuery -->
     <script>
         $(function () {
-            $(document).scroll(function () {
-                var $nav = $(".navbar-fixed-top");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
-        });
+    $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
     </script>
     <!-- Fin JS-JQuery -->
 
 </head>
 <body>
     <header>
-        
         <div class="header-container sticky navbar-fixed-top" id="myHeader">
             <nav>
                 <div class="header-elements">
@@ -41,10 +40,10 @@
                             </div>
                         </li>
                         <div class="dropdown dropdown-margin">
-                            <span><i class="fa-solid fa-umbrella-beach header-menu-button"></i></span>
+                            <span><i class="icon fa-solid fa-umbrella-beach header-menu-button"></i></span>
                             <div class="dropdown-content">
-                                <a class="header-element-camisetas" href="#">Camisetas</a>
-                                <a class="header-element-camisetas" href="#">Galería</a>
+                                <a class="header-element-camisetas dropdown-button-1" href="#">Camisetas</a>
+                                <a class="header-element-camisetas dropdown-button-2" href="#">Galería</a>
                             </div>
                         </div>
                     </ul>
@@ -54,9 +53,9 @@
     </header>
     <main>
 
-        <div class="content">
+        <div class="content-container">
 
-            <div class="bukoni-banner">
+            <div class="bukoni-banner-container">
                 <img src="bukoniBanner1.jpg" class="prueba">
                 <div class="hero-text">
                     <h1 style="font-size:50px">Descubre tu estilo más costero</h1>
@@ -65,9 +64,8 @@
             </div>
 
             <div class="wrapper">
-
                 <video src="video-index.mp4" class="prueba" autoplay></video>
-
+                <h2></h2>
             </div>
 
         </div>
